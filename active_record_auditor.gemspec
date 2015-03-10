@@ -7,21 +7,14 @@ Gem::Specification.new do |spec|
   spec.name          = "active_record_auditor"
   spec.version       = ActiveRecordAuditor::VERSION
   spec.authors       = ["Nic Wilson"]
-  spec.email         = ["nwilson@fanhattan.com"]
+  spec.email         = ["wilsonic89@yahoo.com"]
 
-  if spec.respond_to?(:metadata)
-    spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com' to prevent pushes to rubygems.org, or delete to allow pushes to any server."
-  end
-
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = "Framework for auditing user actions in ActiveRecord"
+  spec.description   = "I should really do this at some point"
+  spec.homepage      = "https://github.com/nbwilson/active_record_auditor"
   spec.license       = "MIT"
 
-  spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
-  spec.bindir        = "exe"
-  spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
-  spec.require_paths = ["lib"]
+  spec.files         = ['README.md']
 
   spec.add_development_dependency "bundler", "~> 1.8"
 end
