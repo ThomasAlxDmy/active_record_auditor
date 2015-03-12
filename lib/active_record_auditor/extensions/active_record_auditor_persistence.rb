@@ -111,7 +111,7 @@ module ActiveRecord
     end
 
     def __username
-      model.try(:username) || model.try(:__username)
+      @__username
     end
 
     def __log_userless_actions
